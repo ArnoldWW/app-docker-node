@@ -28,9 +28,7 @@ jobs:
       
       -name : "Mostrando variables por defecto de GitHub Actions"
       - run: |
-          echo "GitHub Actions - ${{ github.ref }}"
-          echo "GitHub Actions - ${{ github.repository }}"
-          echo "GitHub Actions - ${{ github.sha }}"
-          echo "GitHub Actions - ${{ github.event_name }}"
-          echo "GitHub Actions - ${{ github.workflow }}"
+          echo "GitHub Actions - $GITHUB_ACTION"
+          echo "GitHub Actions - $GITHUB_REPOSITORY"
+          echo "GitHub Actions - $GITHUB_ACTOR"
       
